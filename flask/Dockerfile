@@ -4,6 +4,6 @@ ARG project_dir=/app/
 
 WORKDIR $project_dir
 
-RUN pip install flask
+RUN pip install --upgrade pip && pip install flask
 
 CMD ["python", "main.py"]
